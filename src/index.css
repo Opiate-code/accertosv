@@ -1,0 +1,215 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-display: 'Plus Jakarta Sans', sans-serif;
+  
+  --color-primary: #0d5b6f;
+  --color-primary-container: #317488;
+  --color-primary-fixed: #b4ebff;
+  --color-primary-fixed-dim: #90d0e6;
+  --color-on-primary: #ffffff;
+  --color-on-primary-container: #d5f3ff;
+  
+  --color-secondary: #bb0013;
+  --color-secondary-container: #e71520;
+  --color-on-secondary: #ffffff;
+  --color-accent-red-hover: #D1141C;
+  --color-accent-red-subtle: #FDE8E9;
+  
+  --color-teal-dark: #235564;
+  --color-teal-light: #EAF2F5;
+  --color-teal-muted: #6E9FAD;
+  
+  --color-surface: #f9f9ff;
+  --color-surface-dim: #d7dae5;
+  --color-surface-bright: #f9f9ff;
+  --color-surface-card: #FFFFFF;
+  --color-surface-canvas: #F7F7F7;
+  --color-surface-container: #ebeef9;
+  --color-surface-container-low: #f0f3fe;
+  --color-surface-container-high: #e5e8f3;
+  --color-surface-container-highest: #dfe2ed;
+  
+  --color-on-surface: #181c23;
+  --color-on-surface-variant: #40484c;
+  --color-border-subtle: #E4E8E9;
+  --color-text-muted: #5B6368;
+}
+
+/* Material Symbols sizing and alignment */
+.material-symbols-outlined {
+  font-family: 'Material Symbols Outlined';
+  font-weight: normal;
+  font-style: normal;
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+  vertical-align: middle;
+  font-feature-settings: 'liga';
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Custom Spacing & Typography Helpers matching brand guidelines */
+.px-margin {
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+}
+@media (min-width: 1024px) {
+  .px-margin {
+    padding-left: 3rem;
+    padding-right: 3rem;
+  }
+}
+
+.text-display {
+  font-size: 2.25rem;
+  line-height: 1.15;
+  letter-spacing: -0.025em;
+  font-weight: 800;
+}
+@media (min-width: 768px) {
+  .text-display {
+    font-size: 3.5rem;
+    line-height: 1.08;
+    letter-spacing: -0.03em;
+  }
+}
+
+.text-headline-lg {
+  font-size: 1.85rem;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  font-weight: 700;
+}
+@media (min-width: 768px) {
+  .text-headline-lg {
+    font-size: 2.5rem;
+    line-height: 1.2;
+    letter-spacing: -0.02em;
+  }
+}
+
+.text-headline-md {
+  font-size: 1.625rem;
+  line-height: 1.3;
+  letter-spacing: -0.015em;
+  font-weight: 700;
+}
+@media (min-width: 768px) {
+  .text-headline-md {
+    font-size: 1.875rem;
+    line-height: 1.3;
+  }
+}
+
+.text-headline-sm {
+  font-size: 1.25rem;
+  line-height: 1.4;
+  letter-spacing: -0.01em;
+  font-weight: 600;
+}
+@media (min-width: 768px) {
+  .text-headline-sm {
+    font-size: 1.375rem;
+  }
+}
+
+.text-title-md {
+  font-size: 1.125rem;
+  line-height: 1.4;
+  font-weight: 600;
+}
+
+.text-body-lg {
+  font-size: 1.125rem;
+  line-height: 1.6;
+}
+
+.text-body-md {
+  font-size: 1rem;
+  line-height: 1.55;
+}
+
+.text-body-sm {
+  font-size: 0.875rem;
+  line-height: 1.5;
+}
+
+.text-label-md {
+  font-size: 0.875rem;
+  line-height: 1.3;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+}
+
+.text-label-sm {
+  font-size: 0.75rem;
+  line-height: 1.25;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+}
+
+/* Custom Spacing shortcuts */
+.gap-space-xs { gap: 0.25rem; }
+.gap-space-sm { gap: 0.5rem; }
+.gap-space-md { gap: 1rem; }
+.gap-space-lg { gap: 1.5rem; }
+.gap-space-xl { gap: 2.5rem; }
+.gap-space-2xl { gap: 4rem; }
+
+.p-space-sm { padding: 0.5rem; }
+.p-space-md { padding: 1rem; }
+.p-space-lg { padding: 1.5rem; }
+.p-space-xl { padding: 2rem; }
+.p-space-2xl { padding: 3rem; }
+
+.py-space-xs { padding-top: 0.25rem; padding-bottom: 0.25rem; }
+.py-space-sm { padding-top: 0.5rem; padding-bottom: 0.5rem; }
+.py-space-md { padding-top: 0.75rem; padding-bottom: 0.75rem; }
+.py-space-lg { padding-top: 1.1rem; padding-bottom: 1.1rem; }
+.py-space-xl { padding-top: 1.75rem; padding-bottom: 1.75rem; }
+.py-space-2xl { padding-top: 2.5rem; padding-bottom: 2.5rem; }
+.py-space-3xl { padding-top: 3.5rem; padding-bottom: 3.5rem; }
+
+.px-space-xs { padding-left: 0.25rem; padding-right: 0.25rem; }
+.px-space-sm { padding-left: 0.5rem; padding-right: 0.5rem; }
+.px-space-md { padding-left: 1rem; padding-right: 1rem; }
+.px-space-lg { padding-left: 1.5rem; padding-right: 1.5rem; }
+.px-space-xl { padding-left: 2rem; padding-right: 2rem; }
+
+.mb-space-xs { margin-bottom: 0.25rem; }
+.mb-space-sm { margin-bottom: 0.5rem; }
+.mb-space-md { margin-bottom: 0.75rem; }
+.mb-space-lg { margin-bottom: 1.1rem; }
+.mb-space-xl { margin-bottom: 1.75rem; }
+.mb-space-2xl { margin-bottom: 2.5rem; }
+.mb-space-3xl { margin-bottom: 3.5rem; }
+
+.mt-space-xs { margin-top: 0.25rem; }
+.mt-space-sm { margin-top: 0.5rem; }
+.mt-space-md { margin-top: 0.75rem; }
+.mt-space-lg { margin-top: 1.1rem; }
+.mt-space-xl { margin-top: 1.75rem; }
+.mt-space-2xl { margin-top: 2.5rem; }
+.mt-space-3xl { margin-top: 3.5rem; }
+
+/* Custom smooth scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #f0f3fe;
+}
+::-webkit-scrollbar-thumb {
+  background: #bfc8cc;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #317488;
+}
